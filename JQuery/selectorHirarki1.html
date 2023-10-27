@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="parent">
+      <p>Elemen Anak 1</p>
+      <p>Elemen Anak 2</p>
+    </div>
+
+    <button id="addTextButton">Tambah Teks pada Elemen Anak</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#addTextButton").click(function () {
+          $("#parent p").text("Teks baru untuk elemen anak");
+        });
+      });
+    </script>
+  </body>
+</html>

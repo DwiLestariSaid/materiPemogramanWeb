@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .child {
+        background-color: yellow;
+        padding: 10px;
+        margin: 5px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="parent">
+      <div class="child">Anak 1</div>
+      <div class="child">Anak 2</div>
+    </div>
+
+    <button id="changeColorButton">Ubah Warna Latar Belakang Elemen Induk</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#changeColorButton").click(function () {
+          $(".child").parent().css("background-color", "blue");
+        });
+      });
+    </script>
+  </body>
+</html>

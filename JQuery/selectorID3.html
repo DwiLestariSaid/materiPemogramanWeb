@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <p id="myParagraph">Paragraf 3</p>
+
+    <button id="removeButton">Hilangkan Paragraf</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#removeButton").click(function () {
+          $("#myParagraph").remove();
+        });
+      });
+    </script>
+</body>
+</html>

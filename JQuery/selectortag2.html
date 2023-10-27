@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+</head>
+<body>
+    <img src="image/gambar1.jpg"alt="Gambar1" />
+    <img src="image/gambar2.jpg"alt="Gambar2" />
+    <img src="image/gambar3.jpg"alt="Gambar3" />
+
+    <button id="addBorderButton">Tambah Border pada Gambar</button>
+    <script>
+      $(document).ready(function () {
+        $("#addBorderButton").click(function () {
+          $("img").css("border", "2px solid red");
+        });
+      });
+    </script>
+</body>
+</html>

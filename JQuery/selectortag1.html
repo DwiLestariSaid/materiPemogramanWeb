@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>Paragraf1</p>
+    <p>Paragraf2</p>
+    <p>Paragraf3</p>
+
+    <button id="changeColorButton">Ubah Warna Latar Belakang</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#changeColorButton").click(function(){
+                $("p").css("background-color","yellow");
+            });
+        });
+    </script>
+</body>
+</html>

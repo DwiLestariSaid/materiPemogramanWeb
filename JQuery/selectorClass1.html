@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p class="myClass">Paragraf 1</p>
+    <p class="myClass">Paragraf 2</p>
+    <p class="myClass">Paragraf 3</p>
+
+    <button id="changeTextButton">Ubah Teks</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#changeTextButton").click(function () {
+          $(".myClass").text("Teks telah diubah!");
+        });
+      });
+    </script>
+</body>
+</html>
