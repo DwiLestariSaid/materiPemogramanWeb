@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .borderClass {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+        }
+        </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="borderClass">Elemen 1</div>
+    <div class="borderClass">Elemen 2</div>
+    <div class="borderClass">Elemen 3</div>
+    
+    <button id="addBorderButton">Tambah Border</button>
+    <button id="removeBorderButton">Hapus Border</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#addBorderButton").click(function () {
+              $(".borderClass").addClass("borderAdded");
+            });
+    
+            $("#removeBorderButton").click(function () {
+              $(".borderClass").removeClass("borderAdded");
+            });
+          });   
+    </script>
+</body>
+</html>

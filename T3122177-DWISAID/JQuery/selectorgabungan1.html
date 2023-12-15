@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .highlight {
+        color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p class="highlight">Paragraf 1</p>
+    <p>Paragraf 2</p>
+    <p class="highlight">Paragraf 3</p>
+
+    <button id="changeColorButton">Ubah Warna Teks</button>
+  
+    <script>
+        $(document).ready(function () {
+            $("#changeColorButton").click(function () {
+              $("p.highlight").css("color", "blue");
+            });
+          });
+    </script>
+</body>
+</html>
